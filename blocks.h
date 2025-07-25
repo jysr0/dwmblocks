@@ -1,0 +1,16 @@
+//Modify this file to change what commands output to your statusbar, and recompile using the make command.
+static const Block blocks[] = {
+	/*Icon*/	/*Command*/		/*Update Interval in s*/	/*Update Signal*/
+	{"┃ RAM: ",	"free -h | awk '/^Mem/ { print $3 }' | sed s/i//g",	30,		0}, /* default after print: $3\"/\"$2 */ 
+	{"CPU: ",	"sensors | tr -d '+' | awk 'NR == 3 { print $4 }'",	30,	0},	
+	{"🔋",    "acpi -b | awk --field-separator=, '{ print $2 }'",	120,	0},	
+      /*{"🔆 ",	"brightnessctl | tr -d '()' | awk 'NR == 2 { print $4 }'",	0,	2},*/		
+	{"🔊 ",	"pactl get-sink-volume @DEFAULT_SINK@ | awk '{ print $5 }'",	0,	5},		
+	{"🛜 ",	"nmcli g | awk 'NR == 2 {print $1}'",	1,	0},	
+	{"📆 ", "date '+%m.%d'",					86400,		0},
+	{"⏰ ", "date '+%R'",					60,		0},
+};
+
+//sets delimiter between status commands. NULL character ('\0') means no delimiter.
+static char delim[] = " ┃ ";
+static unsigned int delimLen = 5;
