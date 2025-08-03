@@ -4,8 +4,10 @@ static const Block blocks[] = {
 	{"┃ ram: ",	"free -h | awk '/^Mem/ { print $3 }' | sed s/i//g",	30,		0}, /* default after print: $3\"/\"$2 */ 
 	{"cpu: ",	"sensors | tr -d '+' | awk 'NR == 3 { print $4 }'",	30,	0},	
 
-	{"💽 ",	"df -h | awk 'NR==5 { print $5 }'",	3600,	0},    
-	{"💾 ",	"df -h | awk 'NR==11 { print $5 }'",	3600,	0},    
+	{"",	"internet.block",	3,	0},		
+      
+      /*{"💽 ",	"df -h | awk 'NR==5 { print $5 }'",	3600,	0},*/ 
+      /*{"💾 ",	"df -h | awk 'NR==11 { print $5 }'",	3600,	0},*/   
 
       /*{"⌨ ",	"a.out | awk 'NR == 2 { print $3 }'",	1,	0},*/	
       
@@ -14,10 +16,9 @@ static const Block blocks[] = {
       /*{"🔆 ",	"brightnessctl | tr -d '()' | awk 'NR == 2 { print $4 }'",	0,	2},*/		
         {"",	"volume.block",	0,	5},				
 	
-	{"",	"internet.block",	3,	0},		
       /*{"up: ",	"uptime | awk '{print $3}' | tr -d ,",	60,	0},*/	
 	
-	{"📆 ", "date '+%m.%d'",					86400,		0},
+	{"📆 ", "date '+%B %d'",					86400,		0},
 	{"⏰ ", "date '+%R'",					60,		0},
 };
 
