@@ -12,9 +12,9 @@ static const Block blocks[] = {
       /*{"🔋",    "acpi -b | awk --field-separator=, '{ print $2 }'",	120,	0},*/		
 	{"🔋 ",    "battery.block",	120,	0},	
       /*{"🔆 ",	"brightnessctl | tr -d '()' | awk 'NR == 2 { print $4 }'",	0,	2},*/		
-        {"🔊 ",	"volume.block",	0,	5},				
+        {"",	"volume.block",	0,	5},				
 	
-	{"🛜 ",	"nmcli g | awk 'NR == 2 {print $1}'",	5,	0},		
+	{"",	"internet.block",	3,	0},		
       /*{"up: ",	"uptime | awk '{print $3}' | tr -d ,",	60,	0},*/	
 	
 	{"📆 ", "date '+%m.%d'",					86400,		0},
