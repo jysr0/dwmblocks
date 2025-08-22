@@ -13,8 +13,8 @@ static const Block blocks[] = {
       /*{"KB: ",	"a.out | awk 'NR == 2 { print $3 }'",	1,	0},*/	
       
       /*{"BAT: ",    "acpi -b | awk --field-separator=, '{ print $2 }'",	120,	0},*/		
-	{"",    "battery_dwmblocks.sh",	120,	0},	
-      /*{"bri: ",	"brightnessctl | tr -d '()' | awk 'NR == 2 { print $4 }'",	0,	2},*/		
+	{"",    "dwmblocks_battery.sh",	120,	0},	
+        {"BRI: ",	"brightnessctl | tr -d '()' | awk 'NR == 2 { print $4 }'",	0,	2},	
         {"",	"dwmblocks_volume.sh",	0,	5},				
 	
       /*{"up: ",	"uptime | awk '{print $3}' | tr -d ,",	60,	0},*/	
