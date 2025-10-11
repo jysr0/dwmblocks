@@ -6,9 +6,8 @@ static const Block blocks[] = {
     /*{"IP: ",	"ip -f inet address | awk 'NR==6 { print $2 }'",	10,	0},*/
     /*{"KeyB: ",	"a.out | awk 'NR==2 { print $3 }'",	1,	0},*/	
 
-    {"| ",	"dwmb_ram.sh",	30,		0}, 
-    {"",	"dwmb_cpu_utilization.sh",	20,	0},	
-    {"",	"dwmb_cpu_temprature.sh",	15,	0},	
+    {"| ",	"dwmb_ram.sh",	10,		0}, 
+    {"",	"dwmb_cpu.sh",	8,	0},	
     {"",	"dwmb_network.sh",	3,	0},		
     {"",    	"dwmb_battery.sh",	240,	0},	
     {"",	"dwmb_brightness.sh",	0,	2},
