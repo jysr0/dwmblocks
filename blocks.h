@@ -1,18 +1,19 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
-	/*Icon*/	/*Command*/		/*Update Interval in s*/	/*Update Signal*/
-	/*{"ROOT: ",	"df -h | awk 'NR==5 { print $5 }'",	3600,	0},*/ 
+    /*Icon*/	/*Command*/		/*Update Interval in s*/	/*Update Signal*/
+    /*{"ROOT: ",	"df -h | awk 'NR==5 { print $5 }'",	3600,	0},*/ 
     /*{"HOME: ",	"df -h | awk 'NR==11 { print $5 }'",	3600,	0},*/   
     /*{"IP: ",	"ip -f inet address | awk 'NR==6 { print $2 }'",	10,	0},*/
-    /*{"KB: ",	"a.out | awk 'NR == 2 { print $3 }'",	1,	0},*/	
+    /*{"KeyB: ",	"a.out | awk 'NR==2 { print $3 }'",	1,	0},*/	
 
-	{"| ",	"dwmb_ram.sh",	30,		0}, 
-	{"",	"dwmb_cpu_temprature.sh",	30,	0},	
-	{"",	"dwmb_network.sh",	3,	0},		
-	{"",    "dwmb_battery.sh",	240,	0},	
+    {"| ",	"dwmb_ram.sh",	30,		0}, 
+    {"",	"dwmb_cpu_utilization.sh",	20,	0},	
+    {"",	"dwmb_cpu_temprature.sh",	15,	0},	
+    {"",	"dwmb_network.sh",	3,	0},		
+    {"",    	"dwmb_battery.sh",	240,	0},	
     {"",	"dwmb_brightness.sh",	0,	2},
     {"",	"dwmb_volume.sh",	0,	5},				
-	{"", 	"dwmb_date_time.sh",					60,		0},
+    {"", 	"dwmb_clock.sh",	60,	0},
     {"",	"dwmb_uptime.sh",	300,	0},
     /*{"",	"dwmb_playing.sh",	3,	0},*/
 };
