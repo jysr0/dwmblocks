@@ -9,10 +9,10 @@ static const Block blocks[] = {
     {"| ",	"dwmb_ram.sh",	10,		0}, 
     {"",	"dwmb_cpu.sh",	8,	0},	
     {"",	"dwmb_network.sh",	3,	0},		
-    {"",    	"dwmb_battery.sh",	240,	0},	
+    {"",    	"dwmb_battery.sh",	5,	0},	
     {"",	"dwmb_brightness.sh",	0,	2},
     {"",	"dwmb_volume.sh",	0,	5},				
-    {"", 	"dwmb_clock.sh",	60,	0},
+    {"", 	"dwmb_clock.sh",	30,	0},
     {"",	"dwmb_uptime.sh",	300,	0},
     /*{"",	"dwmb_playing.sh",	3,	0},*/
 };
