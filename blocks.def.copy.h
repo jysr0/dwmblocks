@@ -6,16 +6,16 @@ static const Block blocks[] = {
     //{"IP: ",	"ip -f inet address | awk 'NR==6 { print $2 }'",	10,	0},
     //{"KeyB: ",	"a.out | awk 'NR==2 { print $3 }'",	1,	0},
 
-    //{" ",	"dwmb_ram.sh",	120,		0}, 
-    {" ",	"dwmb_cpu.sh",	120,	0},	
-    {"",	"dwmb_network.sh",	60,	0},		
+    //{" ",	"dwmb_ram.sh",	120,		1}, 
+    {" ",	"dwmb_cpu.sh",	120,	3},	
+    {"",	"dwmb_network.sh",	10,	4},		
     //{"",	"dwmb_rxtx.sh",	10,	0},
-    {"",    "dwmb_battery.sh",	180,	0},	
+    {"",    "dwmb_battery.sh",	180,	6},	
     {"",	"dwmb_brightness.sh",	0,	2},
     {"",	"dwmb_volume.sh",	0,	5},				
-    {"", 	"dwmb_clock.sh",	60,	0},
+    {"", 	"dwmb_clock.sh",	60,	7},
     //{"", 	"dwmb_kernel.sh",	3600,	0},
-    //{"",	"dwmb_uptime.sh",	600,	0},
+    //{"",	"dwmb_uptime.sh",	600,	8},
     //{"",	"dwmb_playing.sh",	3,	0},
 };
 
