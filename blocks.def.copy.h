@@ -13,6 +13,7 @@ static const Block blocks[] = {
     {"",    "dwmb_battery1.sh",	3,	6},	
     {"",	"dwmb_brightness.sh",	0,	2},
     {"",	"dwmb_volume.sh",	0,	5},				
+    {"",	"dwmb_kb_layout.sh",	0,	9},				
     {"", 	"dwmb_clock.sh",	60,	7},
     //{"", 	"dwmb_kernel.sh",	3600,	0},
     //{"",	"dwmb_uptime.sh",	600,	8},
