@@ -1,3 +1,6 @@
+// NOTES: if `statuscmd` dwm patch is going to be used, patch dwmblocks using dwmblocks's github patch...
+//        if dwmblocks build failed, edit the Makefile and add `-std=gnu17` to the beginning of CFLAGS. (Issue #83)
+
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
     /*Icon*/	/*Command*/		/*Update Interval in s*/	/*Update Signal (1-31)*/
