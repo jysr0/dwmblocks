@@ -18,14 +18,15 @@
 
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)\
-    X( " ",	"sb-cpu",							120,		1)\
+    X( " ",	"sb-cpu",							120,		1) /*highest sig: 9*/\
     X( "",	"sb-net",							10,			4)\
     X( "",   "sb-bat",							3,			8)\
     X( "",	"sb-bright",						0,			2)\
     X( "",	"sb-vol",							0,			5)\
-    X( "",	"sb-kb",						    0,			9)\
-    X( "", 	"sb-time",							60,			7)
+    X( "", 	"sb-time",							60,			7)\
+    X( "", 	"sb-pow-mnu",						0,			3)
     
+    //X( "",	"sb-kb",						    0,			9)
     //X("ROOT: ",	"df -h | awk 'NR==5 { print $5 }'",				3600,	0)
     //X("HOME: ",	"df -h | awk 'NR==11 { print $5 }'",			3600,	0)
     //X("IP: ",	"ip -f inet address | awk 'NR==6 { print $2 }'",	10,		0)
